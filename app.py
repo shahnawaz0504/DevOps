@@ -6,7 +6,7 @@ app = FastAPI()
 def index():
     return {'hello': 'raand'}
 
-@app.get('/script', response_class=HTMLResponse)
+@app.get('/alert', response_class=HTMLResponse)
 def read_root():
     return '<script>alert("This is JS")</script>'
 
