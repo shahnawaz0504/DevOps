@@ -8,7 +8,7 @@ def index():
 
 @app.get('/alert', response_class=HTMLResponse)
 def read_root():
-    return '<script>alert("This is JavaScript")</script>'
+    return '<script>alert("Done with 4th lecture")</script>'
 
 @app.get('/amazon', response_class=RedirectResponse)
 def redirect():
